@@ -1,0 +1,11 @@
+<div class = "center jumbotron" >
+  <h1> Welcome to the Music Lobby App</h1>
+  <h2>
+    This is the home page for the Music Lobby App. More info to come soon.
+  </h2>
+  <% if current_user.nil? %>
+    <%= link_to "Sign up now!", new_user_session_path, class: "btn btn-lg btn-primary" %>
+  <% end %>
+</div>
+
+<%= link_to image_tag("jasmine_favicon.png", alt: "MusicLobby logo") %>
