@@ -4,7 +4,7 @@
     This is the home page for the Music Lobby App. More info to come soon.
   </h2>
   <% if current_user.nil? %>
-    <%= link_to "Sign up now!", new_user_session_path, class: "btn btn-lg btn-primary" %>
+    <%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-lg btn-primary" %>
   <% end %>
 </div>
 
